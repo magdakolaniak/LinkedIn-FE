@@ -25,7 +25,9 @@ a.nav-link {
 .bi {
   font-size: 25px;
 }
-
+.bi-linkedin {
+  color: blue !important;
+}
 a#work-icon {
   padding-left: 25px;
   border-left: solid #e6e5e5;
