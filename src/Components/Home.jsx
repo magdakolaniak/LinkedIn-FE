@@ -20,7 +20,7 @@ class Home extends React.Component {
   componentDidMount = async () => {
     try {
       const response = await fetch(
-        `https://api-linkedin-api.herokuapp.com/profile/${this.props.match.params.id}
+        `http://localhost:3030/profile/${this.props.match.params.id}
         `
       );
       if (response.ok) {
@@ -38,7 +38,7 @@ class Home extends React.Component {
 
     try {
       const xpResponse = await fetch(
-        `https://api-linkedin-api.herokuapp.com/profile/${userId}/experiences`
+        `http://localhost:3030/profile/${userId}/experiences`
       );
       if (xpResponse.ok) {
         const xpData = await xpResponse.json();
@@ -56,7 +56,7 @@ class Home extends React.Component {
     }
     try {
       const response = await fetch(
-        `https://api-linkedin-api.herokuapp.com/profile/${this.props.match.params.id}`
+        `hhttp://localhost:3030/profile/${this.props.match.params.id}`
       );
       if (response.ok) {
         const data = await response.json();
@@ -73,7 +73,7 @@ class Home extends React.Component {
 
     try {
       const xpResponse = await fetch(
-        `https://api-linkedin-api.herokuapp.com/profile/${userId}/experiences`
+        `http://localhost:3030/profile/${userId}/experiences`
       );
       if (xpResponse.ok) {
         const xpData = await xpResponse.json();

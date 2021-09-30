@@ -27,7 +27,7 @@ const ExperienceContent = (props) => {
       ))}
 
       <a
-        href={`https://api-linkedin-api.herokuapp.com/profile/${userId}/pdfDownload`}
+        href={`http://localhost:3030/profile/${userId}/pdfDownload`}
         download="save"
         className="download-link"
       >

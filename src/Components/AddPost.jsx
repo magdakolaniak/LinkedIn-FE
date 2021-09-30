@@ -16,16 +16,13 @@ class AddPost extends React.Component {
   submitPost = async (e) => {
     e.preventDefault();
     try {
-      let response = await fetch(
-        'https://api-linkedin-api.herokuapp.com/posts',
-        {
-          method: 'POST',
-          body: JSON.stringify(this.state.new),
-          headers: {
-            'Content-Type': 'application/json',
-          },
-        }
-      );
+      let response = await fetch('http://localhost:3030/posts', {
+        method: 'POST',
+        body: JSON.stringify(this.state.new),
+        headers: {
+          'Content-Type': 'application/json',
+        },
+      });
 
       if (response.ok) {
         alert('Sucesfully posted, you can now close the window :)');
@@ -34,7 +31,7 @@ class AddPost extends React.Component {
           const id = data._id;
 
           let newResponse = await fetch(
-            `https://api-linkedin-api.herokuapp.com/posts/${id}/upload`,
+            `http://localhost:3030/posts/${id}/upload`,
             {
               method: 'POST',
 

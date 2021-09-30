@@ -3,7 +3,7 @@ import PostCard from './PostCard.jsx';
 import { useState, useEffect } from 'react';
 
 async function getAllPosts() {
-  const url = 'https://api-linkedin-api.herokuapp.com/posts';
+  const url = 'http://localhost:3030/posts';
   const response = await fetch(url);
   const data = await response.json();
 

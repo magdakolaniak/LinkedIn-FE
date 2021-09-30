@@ -15,7 +15,7 @@ class Feeds extends React.Component {
   componentDidMount = async () => {
     try {
       const response = await fetch(
-        `https://api-linkedin-api.herokuapp.com/profile/60c9be8b6f63455fa0ee7849`
+        `http://localhost:3030/profile/60c9be8b6f63455fa0ee7849`
       );
       if (response.ok) {
         const data = await response.json();

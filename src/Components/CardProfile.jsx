@@ -13,7 +13,7 @@ class CardProfile extends React.Component {
 
     try {
       const response = await fetch(
-        `https://api-linkedin-api.herokuapp.com/profile/60c9be8b6f63455fa0ee7849/experiences`,
+        `http://localhost:3030/profile/60c9be8b6f63455fa0ee7849/experiences`,
         {
           method: 'POST',
           headers: {

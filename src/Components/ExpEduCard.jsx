@@ -20,7 +20,7 @@ class ExpEduCard extends React.Component {
 
     try {
       const response = await fetch(
-        `https://api-linkedin-api.herokuapp.com/profile/${this.state.userId}/experiences/${this.state.expId}`,
+        `http://localhost:3030/profile/${this.state.userId}/experiences/${this.state.expId}`,
         {
           method: 'PUT',
           headers: {
